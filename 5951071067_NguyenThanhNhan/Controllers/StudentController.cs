@@ -33,7 +33,7 @@ namespace _5951071067_NguyenThanhNhan.Controllers
       
         public StudentInfo Get(String id)
         {
-            if(id.Contains("5951071067")) 
+            if(String.Compare(id,"5951071067",true)==0) 
             {
                 return new StudentInfo
                 {
