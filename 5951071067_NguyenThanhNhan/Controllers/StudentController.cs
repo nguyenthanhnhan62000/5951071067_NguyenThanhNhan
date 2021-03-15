@@ -21,7 +21,7 @@ namespace _5951071067_NguyenThanhNhan.Controllers
                 {
                     idStudent = i.ToString(),
                     NameStudent = $"Name {i}",
-                    SdtStudent = $"{i}" + $"{ i + 1}" + $"{ i + 2}" + $"{ i + 3}"
+                    AddressStudent = $"{i}" + $"{ i + 1}" + $"{ i + 2}" + $"{ i + 3}"
 
                 };
                 StudentList.Add(Student);
@@ -31,13 +31,23 @@ namespace _5951071067_NguyenThanhNhan.Controllers
         }
 
         // GET: api/Student/5
-        public StudentInfo Get(int id)
+        public StudentInfo Get(String id)
         {
+            if(id.Contains("5951071067")) 
+            {
+                return new StudentInfo
+                {
+                    NameStudent = "nguyễn thành nhân",
+                    idStudent = id.ToString(),
+                    AddressStudent = "Bình Định"
+                };
+                
+            }
             return  new StudentInfo
             {
                 idStudent = id.ToString(),
                 NameStudent = $"Name {id}",
-                SdtStudent = $"{id}" + $"{ id + 1}" + $"{ id + 2}" + $"{ id + 3}"
+                AddressStudent = $"{id}" + $"{ id + 1}" + $"{ id + 2}" + $"{ id + 3}"
 
             }; ;
         }

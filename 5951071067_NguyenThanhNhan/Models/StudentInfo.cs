@@ -14,8 +14,8 @@ namespace _5951071067_NguyenThanhNhan.Models
         [DataMember(Name = "NameStudent")]
         public String NameStudent { get; set; }
 
-        [DataMember(Name = "SdtStudent")]
-        public String SdtStudent { get; set; }
+        [DataMember(Name = "AddressStudent")]
+        public String AddressStudent { get; set; }
 
 
     }
