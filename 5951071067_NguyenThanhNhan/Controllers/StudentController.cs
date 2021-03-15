@@ -30,7 +30,7 @@ namespace _5951071067_NguyenThanhNhan.Controllers
             return StudentList;
         }
 
-        // GET: api/Student/5
+      
         public StudentInfo Get(String id)
         {
             if(id.Contains("5951071067")) 
